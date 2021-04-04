@@ -1,0 +1,162 @@
+:root {
+    /*-----Colors-----*/
+
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+    --white: #fafafa;
+
+    /*-----Typography-----*/
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*-----Testimonials-----*/
+
+.container {
+    width: 100%;
+    padding: 30px 30px 60px 30px;
+    background-image: url(images/pattern-curve.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.card__image {
+    max-width: 315px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(images/pattern-bg.svg);
+    background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center 37%;
+}
+
+.john-image, .tanya-image {
+    padding: 40px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.john-image {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.tanya-image {
+    position: relative;
+    transition: opacity .5s;
+}
+
+/*-----Content-Section-----*/
+
+.card__content {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center 8%;
+}
+
+.card__content--john {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card__content--tanya {
+    transition: opacity .5s;
+}
+
+.card__content--testimony {
+    padding: 40px 0 15px 0;
+}
+
+.testimony {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
+.name, .career {
+    font-size: 1.5rem;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.career {
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+/*-----Slider-Section-----*/
+
+.slider {
+    display: inline-flex;
+    position: absolute;
+    left: calc(50% - 42.5px);
+    bottom: 8%;
+}
+
+.prev, .next {
+    width: 90%;
+}
+
+.slider__prev, .slider__next {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 5px 2px 20px #ccc;
+    cursor: pointer;
+
+}
+
+.slider__prev {
+    border-radius: 25px 0 0 25px;
+}
+
+.slider__next {
+    border-radius: 0 25px 25px 0;
+}
+
+/*-----Toggle-----*/
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}

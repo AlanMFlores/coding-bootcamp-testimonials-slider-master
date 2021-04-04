@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    padding: 0 130px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: 35%;
+    
+}
+
+.card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.card__image {
+    max-width: 650px;
+    margin: 0;
+}
+
+.tanya-image, .john-image {
+    border-radius: 25px;
+    padding: 80px;
+}
+
+.card__content {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    max-width: 58%;
+}
+
+.testimony {
+    font-size: 2.8rem;
+}
+
+.slider {
+    bottom: 10%;
+    left: 20%;
+}
+
+.card__content--description {
+    display: flex;
+    margin-top: 15px;
+}
+
+.name, .career {
+    font-size: 1.7rem;
+}
+
+.name {
+    margin-right: 10px;
+}
